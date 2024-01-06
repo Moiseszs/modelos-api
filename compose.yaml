@@ -2,7 +2,7 @@ services:
   api:
     build: .
     ports:
-      - "5166:5166"
+      - "5000:5000"
 
   sql:
     image: "mysql"
@@ -12,5 +12,5 @@ services:
       MYSQL_PASSWORD: "root"
       MYSQL_ROOT_PASSWORD: "root"
     expose:
-      - '3306'
+      - '3306:3306'
       
