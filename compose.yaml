@@ -1,0 +1,16 @@
+services:
+  api:
+    build: .
+    ports:
+      - "5166:5166"
+
+  sql:
+    image: "mysql"
+    environment:
+      MYSQL_DATABASE: "database"
+      MYSQL_USER: "user"
+      MYSQL_PASSWORD: "root"
+      MYSQL_ROOT_PASSWORD: "root"
+    expose:
+      - '3306'
+      
