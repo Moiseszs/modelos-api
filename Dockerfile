@@ -7,7 +7,7 @@ RUN dotnet restore
 
 RUN dotnet publish -C Release -o out
 
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:7.0
 
 WORKDIR /app
 
