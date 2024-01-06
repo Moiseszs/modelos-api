@@ -1,7 +1,7 @@
 # Do que se trata? 
 API pura feita com C# e .NET
 
-Feita para ser um hub de modelos e ideais de banco de dados para várias aplicações
+Feita para ser um hub de modelos e ideais de banco de dados para várias aplicações.
 
 Endpoints:
 
