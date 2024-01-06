@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /app
 
-COPY . /app
+COPY . ./
 
 RUN dotnet restore
 
@@ -11,6 +11,6 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 
 WORKDIR /app
 
-COPY --from=build /app/out
+COPY --from=build /app/out .
 
 ENTRYPOINT ["dotnet", "db-share.dll"]
