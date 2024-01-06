@@ -5,7 +5,7 @@ COPY . ./
 
 RUN dotnet restore
 
-RUN dotnet publish -C Release -o out
+RUN dotnet publish -c Release -o out
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0
 
